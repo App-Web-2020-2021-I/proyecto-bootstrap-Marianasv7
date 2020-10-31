@@ -1,0 +1,22 @@
+#huella{
+    font-size: 2em;
+}
+#redes{
+    font-size: 2em;
+}
+#carrucel{
+    max-width: 650px;
+}
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .form {
+    width: 450px;
+  }
+  #mascota{
+      100px;
+  }

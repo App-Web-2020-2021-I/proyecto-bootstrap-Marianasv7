@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <title>Conejos</title>
+</head>
+<body>
+    <div class="container bg-white">
+        <!--Primer modulo-->
+        <div class="bg-light row ">
+            <div class ="col-3 py-3">
+                <div class="d-inline-block" id="logo">
+                    <img src="logo.png" alt="logo" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="d-none d-md-block col-6 p-2">
+                <div class="row text-right">
+                    
+                    <!--Botones-->
+                    <div class="ml-3 text-right d-inline-block ml-auto">
+                        <button class="btn btn-light" type="button" data-toggle="modal" data-target="#modalLogin">
+                            Iniciar sesión
+                        </button>
+                       
+                            <i class="fas fa-paw" id="huella"></i>
+                     
+                   
+                        <button class="btn btn-light" type="button" data-toggle="modal" data-target="#modalRAU">
+                            Registrarse
+                        </button>
+                        
+                        
+                        
+                    </div>
+                </div>
+               
+            </div>
+
+            <!--Para dispositivos pequeños--> 
+            <div class="ml-auto">
+                <div class="row justify-content-end collapse" id="menu_footer">
+                    <div class="col bg-light ">
+                        <div>
+                            <a href="" class="text-dark" data-toggle="modal" data-target="#modalLoginP">Inicicar sesión</a>
+                        </div>  
+                        <div> 
+                            <a href="" class="text-dark" data-toggle="modal" data-target="#modalRAUP">Registrarse</a>
+                        </div>
+                    <div>
+                            
+                </div>
+            </div>
+                </div>
+                <div class="bg-light row text-white d-md-none text-left ml-auto ">
+                    
+                    <div class="col-8">
+                        <button class="btn btn-light footer_phone" data-toggle="collapse" data-target="#menu_footer">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+                
+           
+            
+        </div>
+      
+        <div class="bg-light row">
+            <div div class="col bg-light">
+                <h3 class="text-center">
+                    Conejos
+                </h3>
+            </div>
+        </div>
+
+        <!--Modulo de perros en adopción-->
+        <div class="bg-light col-20">
+            <!--No funciona-->
+            <div class="d-flex" >
+                <button  class="ml-auto btn btn-dark" type="button" data-toggle="modal" data-target="#modalAgregar">
+                    Agregar
+                </button>
+            </div>
+            
+            <div class="d-none d-md-block">
+                <div class="row mt-3">
+                    <div class="col-3">
+                        <img src="c1.png" class="img-fluid">
+                    </div>
+                   
+                    <div class="col-3 bg-light">
+                        <h5 class="text-center">Bigotes</h5>
+                        <p class="text-justify">
+                           Conejo cabeza de León aproximadamente 3 años
+                        </p> 
+                        <!--Esta parte no funciona-->
+                        <div>
+                            <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modalModificar">
+                                Modificar
+                            </button>
+                        </div>
+                        <div>
+                            
+                            <button class="btn btn-dark" type="button">
+                                Eliminar
+                            </button>
+                        </div>
+
+                        Personas interesadas en adoptar
+                       
+                    </div>
+                   
+                    <div class="col-3">
+                        <img src="c2.png" class="img-fluid">
+                    </div>
+                    <div class="col-3 bg-light">
+                        <h5 class="text-center">Manchas</h5>
+                        <p class="text-justify">
+                            Conejo cabeza de león de mes y medio
+                        </p> 
+                       
+                        <div>
+                            <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modalModificar">
+                                Modificar
+                            </button>
+                        </div>
+                        <div>
+                            
+                            <button class="btn btn-dark" type="button">
+                                Eliminar
+                            </button>
+                        </div>
+                        Personas interesadas en adoptar
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            
+
+        <!--Para dispositivos pequeños-->
+        <div class="bg-light row col d-md-none ">
+                    
+                <div class="footer_phone"  data-target="#menu_footer">
+                    <div class="row mt-3">
+                        <div class="col">
+                            <img src="c1.png" class="img-fluid">
+                            
+                        </div>
+                        <div class="col bg-light">
+                            <h5 class="text-center">Bigotes</h5>
+                            <p class="text-justify">
+                                Conejo cabeza de León aproximadamente 3 años
+                            </p> 
+                           
+                            <div>
+                                <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modalModificar">
+                                    Modificar
+                                </button>
+                            </div>
+                            <div>
+                                
+                                <button class="btn btn-dark" type="button">
+                                    Eliminar
+                                </button>
+                            </div>
+                            Personas interesadas en adoptar
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="footer_phone"  data-target="#menu_footer">
+                    <div class="row mt-3">
+                        <div class="col">
+                            <img src="c2.png" class="img-fluid">
+                            
+                        </div>
+                        <div class="col bg-light">
+                            <h5 class="text-center">Manchas</h5>
+                            <p class="text-justify">
+                                Conejo cabeza de león de mes y medio
+                            </p> 
+                            <div>
+                                <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modalModificar">
+                                    Modificar
+                                </button>
+                            </div>
+                            <div>
+                                
+                                <button class="btn btn-dark" type="button">
+                                    Eliminar
+                                </button>
+                            </div>
+                            Personas interesadas en adoptar
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+       
+        <!--Pie de pagina-->
+        <div class="bg-light row text-white ">
+            <div class="col-6" id="redes">
+               <a href="" class="text-dark">
+                    <i class="fab fa-facebook-square"></i>
+
+               </a>
+               <a href="" class="text-dark">
+                <i class="fab fa-instagram-square"></i>
+
+               </a>
+               <a href="" class="text-dark">
+                <i class="fab fa-twitter-square"></i>
+
+               </a>
+            </div>
+            
+          
+        </div>
+        
+
+        <!--Modal Registro adoptante o consulta-->
+
+        <div class="modal fade" class="d-none" id="modalRAU" tabindex="-1" class="d-none">
+            <div class="modal-dialog">
+                <div class="modal-content ml-auto">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-tittle">Registro</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                 
+                    <div class="modal-footer row w-100 align-items-center">
+                        <div class="col text-center">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalRegistroA"> Adoptante  </button>
+                        </div>	
+                        <i class="fas fa-paw" id="huella"></i>
+                        <div class="col text-center">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalRegistroC"> Consulta </button>
+                        </div>
+                    </div>
+
+                
+                </div>
+            </div>
+    
+    
+        </div>
+        <!--Modal registro adoptante o consulta dispositivo pequeño-->
+        <div class="modal fade" id="modalRAUP" tabindex="-1" id="menu_footer">
+            <div class="modal-dialog">
+                <div class="modal-content ml-auto">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-tittle">Registro</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                 
+                    <div class="modal-footer row w-100 align-items-center">
+                        <div class="col text-center">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalRegistroAP"> Adoptante  </button>
+                        </div>  
+                        
+                    </div>
+                    <div class="modal-footer row w-100 align-items-center">
+                        <div class="col text-center">
+                            <i class="fas fa-paw" id="huella"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer row w-100 align-items-center">
+                        <div class="col text-center">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalRegistroCP"> Consulta </button>
+                        </div>
+                    </div>
+
+                
+                </div>
+            </div>
+    
+    
+        </div>
+
+        <!--Modal para el registro de adoptantes-->
+        <div class="modal fade" class="d-none" id="modalRegistroA" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Registro Adoptante</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Nombre (s)</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+    
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="name">Apellidos</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname">
+    
+                                </div>
+    
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Edad</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+    
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="name">Dirección</label>
+                                    <input type="text" class="form-control" id="lastname2" name="lastname2">
+    
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Teléfono fijo</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+    
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="name">Celular</label>
+                                    <input type="text" class="form-control" id="lastname2" name="lastname2">
+    
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Correo</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Contraseña</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+    
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="name">Confirmar contraseña</label>
+                                    <input type="text" class="form-control" id="lastname2" name="lastname2">
+    
+                                </div>
+                            </div>
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Aceptar
+                        </button>
+                        <button class="btn btn-secondaru" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+        <!--Modal para el registro de adoptantes en dispositivo pequeño -->
+        <div class="modal fade" id="modalRegistroAP" tabindex="-1" id="menu_footer">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Registro Adoptante</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nombre (s)</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Apellidos</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Edad</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Dirección</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Teléfono fijo</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Celular</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Correo</label>
+                                <input type="text" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Contraseña</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Confirmar contraseña</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Aceptar
+                        </button>
+                        <button class="btn btn-secondaru" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+
+         <!--Modal para el registro de consultas-->
+         <div class="modal fade" class="d-none" id="modalRegistroC" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Registro para consultas</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Nombre (s)</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+    
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="name">Apellidos</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname">
+    
+                                </div>
+    
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Celular</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+    
+                                </div>
+                            </div>
+                           
+                            <div class="form-group">
+                                <label for="name">Correo</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Contraseña</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+    
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="name">Confirmar contraseña</label>
+                                    <input type="text" class="form-control" id="lastname2" name="lastname2">
+    
+                                </div>
+                            </div>
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Aceptar
+                        </button>
+                        <button class="btn btn-secondaru" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+        <!--Modal para el registro de consultas dispositivos pequeños -->
+        <div class="modal fade" id="modalRegistroCP" tabindex="-1" id="menu_footer">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Registro para consultas</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nombre (s)</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Apellidos</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Celular</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Correo</label>
+                                <input type="text" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Contraseña</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Confirmar contraseña</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Aceptar
+                        </button>
+                        <button class="btn btn-secondaru" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+
+
+
+        <!--Modal para Login A O C-->
+        <div class="modal fade"  id="modalLogin" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content ml-auto">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-tittle">Incio de sesión Adopción o Consulta</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                 
+                    <div class="modal-footer row w-100 align-items-center">
+                        <div class="col text-center">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalLoginA"> Adoptante  </button>
+                        </div>	
+                        <i class="fas fa-paw" id="huella"></i>
+                        <div class="col text-center">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalLoginA2"> Consulta  </button>
+                        </div>
+                    </div>
+
+                
+                </div>
+            </div>
+    
+    
+        </div>
+         <!--Modal Login adoptante o consulta dispositivo pequeño-->
+         <div class="modal fade"  id="modalLoginP" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content ml-auto">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-tittle">Incio de sesión Adopción o Consulta</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                 
+                    <div class="modal-footer row w-100 align-items-center">
+                        <div class="col text-center">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalLoginA"> Adoptante  </button>
+                        </div>	
+                    </div>
+                    <div class="modal-footer row w-100 align-items-center">
+                        <div class="col text-center">
+                            <i class="fas fa-paw" id="huella"></i>
+                        </div>
+                    </div>
+                    <div class="modal-footer row w-100 align-items-center">
+                        <div class="col text-center">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalLoginA2"> Consulta  </button>
+                        </div>
+                    </div>
+                   
+
+                
+                </div>
+            </div>
+    
+    
+        </div>
+       
+        <!--Modal Login adoptantes-->
+         <div class="modal fade" id="modalLoginA" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Inicio de sesión Adoptante</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                       
+                            <div class="form-group">
+                                <label for="name">Correo</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Contraseña</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+                            </div>
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Aceptar
+                        </button>
+                        <button class="btn btn-secondaru" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+        
+        <!--Modales que no funcionan-->
+
+        <!--Modal Login para consultas-->
+        <div class="modal fade" id="modalLoginA2" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Inicio de sesión Adoptante</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                       
+                            <div class="form-group">
+                                <label for="name">Correo</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Contraseña</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+                            </div>
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Aceptar
+                        </button>
+                        <button class="btn btn-secondaru" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+        
+        <!--Modal para modificar mascotas-->
+        <div class="modal fade" id="modalModificar" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Modificar mascota</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Foto</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                    <button class="btn btn-primary">
+                                        Examinar
+                                    </button>
+                                </div>
+                               
+    
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+    
+                                </div>
+                            </div>
+                           
+                            <div class="form-group">
+                                <label for="name">Descripción</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                           
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Aceptar
+                        </button>
+                        <button class="btn btn-secondaru" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+
+        <!--Moda para agregar mascota-->
+
+        <div class="modal fade" id="modalAgregar" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Agregar mascota</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Foto</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                    <button class="btn btn-primary">
+                                        Examinar
+                                    </button>
+                                </div>
+                               
+    
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+    
+                                </div>
+                            </div>
+                           
+                            <div class="form-group">
+                                <label for="name">Descripción</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                           
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Aceptar
+                        </button>
+                        <button class="btn btn-secondaru" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+        
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
