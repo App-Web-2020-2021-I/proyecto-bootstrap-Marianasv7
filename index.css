@@ -18,5 +18,5 @@
     width: 450px;
   }
   #mascota{
-      100px;
-  }
+    max-width: 80px;
+}
