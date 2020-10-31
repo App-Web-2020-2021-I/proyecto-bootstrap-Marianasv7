@@ -71,7 +71,7 @@
             
         </div>
       
-        <div class="bg-light row">
+        <div class="bg-light row py-2">
             <div div class="col bg-light">
                 <h3 class="text-center">
                     Perros
@@ -81,63 +81,68 @@
 
         <!--Modulo de perros en adopción-->
         <div class="bg-light col-20">
-            <!--No funciona-->
-            <div class="d-flex" >
+            
+            <div class="d-flex py-2" >
                 <button  class="ml-auto btn btn-dark" type="button" data-toggle="modal" data-target="#modalAgregar">
                     Agregar
                 </button>
             </div>
             
-            <div class="d-none d-md-block">
+            <div class="d-none d-md-block py-2">
                 <div class="row mt-3">
                     <div class="col-3">
-                        <img src="p1.png" class="img-fluid">
+                        <img src="p1.png" class="img-fluid py-2">
+                        <div>
+                            <button class="btn btn-dark " type="button" data-toggle="modal" data-target="#modalModificar">
+                                Modificar
+                            </button>
+                        </div>
+                        <div class="py-2">
+                            
+                            <button class="btn btn-dark" type="button">
+                                Eliminar
+                            </button>
+                        </div>
+                        <div class="py-2">
+                            Personas interesadas en adoptar
+                        </div>
+                       
                     </div>
                    
                     <div class="col-3 bg-light">
-                        <h5 class="text-center">Luna</h5>
-                        <p class="text-justify">
+                        <h5 class="text-center py-2">Luna</h5>
+                        <p class="text-justify py-4">
                            Perra cruza de maltes, aproximadamente 6 años, no convive con otros perros, convive con niños
                         </p> 
-                        <!--Esta parte no funciona-->
+                    </div>
+                    
+
+                    <div class="col-3">
+                        <img src="p2.png" class="img-fluid py-2">
                         <div>
-                            <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modalModificar">
+                            <button class="btn btn-dark " type="button" data-toggle="modal" data-target="#modalModificar">
                                 Modificar
                             </button>
                         </div>
-                        <div>
+                        <div class="py-2">
                             
                             <button class="btn btn-dark" type="button">
                                 Eliminar
                             </button>
                         </div>
-
-                        Personas interesadas en adoptar
+                        <div class="py-2">
+                            Personas interesadas en adoptar
+                        </div>
                        
                     </div>
                    
-                    <div class="col-3">
-                        <img src="p2.png" class="img-fluid">
-                    </div>
                     <div class="col-3 bg-light">
-                        <h5 class="text-center">Sully</h5>
-                        <p class="text-justify">
-                            Perro de aproximadamente 2 años, convive con niños y con otros perros.
+                        <h5 class="text-center py-2">Sully</h5>
+                        <p class="text-justify py-4">
+                           Perro maltes, aproximadamente 2 años, convive con otros perros, convive con niños
                         </p> 
-                       
-                        <div>
-                            <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modalModificar">
-                                Modificar
-                            </button>
-                        </div>
-                        <div>
-                            
-                            <button class="btn btn-dark" type="button">
-                                Eliminar
-                            </button>
-                        </div>
-                        Personas interesadas en adoptar
                     </div>
+
                 </div>
             </div>
 
@@ -650,8 +655,8 @@
                                 <input type="text" class="form-control" id="email" name="email">
     
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-6">
+                            
+                            <div class="form-group">
                                     <label for="name">Contraseña</label>
                                     <input type="text" class="form-control" id="password" name="password">
                             </div>
@@ -672,14 +677,14 @@
     
         </div>
         
-        <!--Modales que no funcionan-->
+        
 
         <!--Modal Login para consultas-->
         <div class="modal fade" id="modalLoginA2" tabindex="-1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-tittle">Inicio de sesión Adoptante</h5>
+                        <h5 class="modal-tittle">Inicio de sesión Consultas</h5>
                         <button type="button" class="close" data-dismiss="modal">
                             <span>&times;</span>
                         </button>
@@ -692,8 +697,8 @@
                                 <input type="text" class="form-control" id="email" name="email">
     
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-6">
+                           
+                            <div class="form-group col-6">
                                     <label for="name">Contraseña</label>
                                     <input type="text" class="form-control" id="password" name="password">
                             </div>
@@ -710,13 +715,14 @@
                     </div>
                 </div>
             </div>
-    
+        
     
         </div>
-        
+        <!--Modales que no funcionan-->
+
         <!--Modal para modificar mascotas-->
         <div class="modal fade" id="modalModificar" tabindex="-1">
-            <div class="modal-dialog modal-lg">
+           <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-tittle">Modificar mascota</h5>
@@ -727,14 +733,20 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-row">
-                                <div class="form-group col-6">
+                                <div class="form-group col-6 ">
                                     <label for="name">Foto</label>
                                     <input type="text" class="form-control" id="name" name="name">
-                                    <button class="btn btn-primary">
-                                        Examinar
-                                    </button>
+                                   
                                 </div>
-                               
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="name"></label>
+                                        <button class="btn btn-primary">
+                                            Examinar
+                                        </button>
+                                    </div>
+                                     
+                                </div>                              
     
                             </div>
                             <div class="form-row">
@@ -764,7 +776,7 @@
                     </div>
                 </div>
             </div>
-    
+            
     
         </div>
 
@@ -772,56 +784,62 @@
 
         <div class="modal fade" id="modalAgregar" tabindex="-1">
             <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-tittle">Agregar mascota</h5>
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span>&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-6">
-                                    <label for="name">Foto</label>
-                                    <input type="text" class="form-control" id="name" name="name">
-                                    <button class="btn btn-primary">
-                                        Examinar
-                                    </button>
-                                </div>
-                               
-    
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-6">
-                                    <label for="name">Nombre</label>
-                                    <input type="text" class="form-control" id="password" name="password">
-    
-                                </div>
-                            </div>
-                           
-                            <div class="form-group">
-                                <label for="name">Descripción</label>
-                                <input type="text" class="form-control" id="email" name="email">
-    
-                            </div>
-                           
-                        </form>
-    
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary">
-                            Aceptar
-                        </button>
-                        <button class="btn btn-secondaru" data-dismiss="modal">
-                            Cancelar
-                        </button>
-                    </div>
-                </div>
-            </div>
-    
-    
-        </div>
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h5 class="modal-tittle">Agregar mascota</h5>
+                         <button type="button" class="close" data-dismiss="modal">
+                             <span>&times;</span>
+                         </button>
+                     </div>
+                     <div class="modal-body">
+                         <form>
+                             <div class="form-row">
+                                 <div class="form-group col-6 ">
+                                     <label for="name">Foto</label>
+                                     <input type="text" class="form-control" id="name" name="name">
+                                    
+                                 </div>
+                                 <div class="form-row">
+                                     <div class="form-group col-6">
+                                         <label for="name"></label>
+                                         <button class="btn btn-primary">
+                                             Examinar
+                                         </button>
+                                     </div>
+                                      
+                                 </div>                              
+     
+                             </div>
+                             <div class="form-row">
+                                 <div class="form-group col-6">
+                                     <label for="name">Nombre</label>
+                                     <input type="text" class="form-control" id="password" name="password">
+     
+                                 </div>
+                             </div>
+                            
+                             <div class="form-group">
+                                 <label for="name">Descripción</label>
+                                 <input type="text" class="form-control" id="email" name="email">
+     
+                             </div>
+                            
+                         </form>
+     
+                     </div>
+                     <div class="modal-footer">
+                         <button class="btn btn-primary">
+                             Aceptar
+                         </button>
+                         <button class="btn btn-secondaru" data-dismiss="modal">
+                             Cancelar
+                         </button>
+                     </div>
+                 </div>
+             </div>
+             
+     
+         </div>
         
 
     </div>
