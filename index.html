@@ -15,7 +15,7 @@
         <div class="bg-light row ">
             <div class ="col-3 py-3">
                 <div class="d-inline-block" id="logo">
-                    <img src="logo.png" alt="logo" class="img-fluid">
+                    <img src="logo.PNG"  class="img-fluid">
                 </div>
             </div>
 
@@ -35,7 +35,7 @@
                             Registrarse
                         </button>
                         
-                        
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalRealizarConsulta"> Realiazar consulta </button>
                         
                     </div>
                 </div>
@@ -46,6 +46,9 @@
             <div class="ml-auto">
                 <div class="row justify-content-end collapse" id="menu_footer">
                     <div class="col bg-light ">
+                        <div>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalRealizarConsulta"> Realiazar consulta </button>
+                        </div>
                         <div>
                             <a href="" class="text-dark" data-toggle="modal" data-target="#modalLoginP">Inicicar sesión</a>
                         </div>  
@@ -143,7 +146,7 @@
                                     Perros
                                     
                                 </div>
-                                <img src="p1.png" class="img-fluid">
+                                <img src="p1.png" class="mascota"class="img-fluid">
                                 <div>
                                     <a href="perro.html">Ver perros en adopción</a>
                                 </div>
@@ -156,7 +159,7 @@
                                     Gatos
 
                                 </div>
-                                <img src="g1.png" class="img-fluid">
+                                <img src="g1.png" class="mascota" class="img-fluid">
                                 <div>
                                     <a href="gato.html">Ver gatos en adopción</a>
                                 </div>
@@ -168,8 +171,8 @@
                                 <div class="h4">
                                     Conejos
 
-                                </div>
-                                <img src="c1.png" class="img-fluid">
+                                </div>c
+                                <img src="c1.png" class="mascota"class="img-fluid">
                                 
                                 <div>
                                     <a href="conejo.html">Ver conejos en adopción</a>
@@ -257,7 +260,15 @@
         </div>
         
         
-       
+       <!--Bloque para que el veterinario vea las consultas -->
+       <div class="bg-light row py-5">
+           <div>
+            <div class="col text-center">
+                <a href="consulta.html">Ver Consultas</a>
+            </div>	
+           </div>
+
+       </div>
 
         <!--Pie de pagina-->
         <div class="bg-light row text-white ">
@@ -294,11 +305,11 @@
                  
                     <div class="modal-footer row w-100 align-items-center">
                         <div class="col text-center">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalRegistroA2"> Adoptante  </button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalRegistroA"> Adoptante  </button>
                         </div>	
                         <i class="fas fa-paw" id="huella"></i>
                         <div class="col text-center">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalRegistroA"> Consulta </button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalRegistroC"> Consulta </button>
                         </div>
                     </div>
 
@@ -689,7 +700,7 @@
        
         <!--Modal Login adoptantes-->
          <div class="modal fade" id="modalLoginA" tabindex="-1">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-tittle">Inicio de sesión Adoptante</h5>
@@ -729,7 +740,7 @@
         
         <!--Modal Login para consultas-->
         <div class="modal fade" id="modalLoginA2" tabindex="-1">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-tittle">Inicio de sesión Consultas</h5>
@@ -768,6 +779,63 @@
         </div>
         
         
+        <!--Modal para Realizar una consulta-->
+        <div class="modal fade" id="modalRealizarConsulta" tabindex="-1">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Consultas</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group ">
+                                    <label for="name">Nombre de la mascota</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+    
+                                </div>
+    
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group ">
+                                    <label for="name">Día de la consulta</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+    
+                                </div>
+                            </div>
+                           
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Hora de la consulta</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+    
+                                </div>
+                               
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Breve descripción de la consulta</label>
+                                <input type="text" class="form-control" id="email" name="email">
+    
+                            </div>
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Aceptar
+                        </button>
+                        <button class="btn btn-secondaru" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
 
         
 
